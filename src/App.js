@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router';
 
 class App extends Component {
   render() {
     return (
-        <div classNameNameName="container">
-            <nav classNameName="navbar navbar-inverse navbar-fixed-top">
-      <div className="container">
+        <div className="container">
+              <nav className="navbar navbar-default navbar-fixed-top">
         <div className="navbar-header">
           <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span className="sr-only">Toggle navigation</span>
@@ -15,16 +15,20 @@ class App extends Component {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <a className="navbar-brand" href="#">Game Review Site</a>
+          <a className="navbar-brand" href="#">Review Games!</a>
         </div>
-        <div id="navbar" className="collapse navbar-collapse">
+        <div id="navbar" className="navbar-collapse collapse">
           <ul className="nav navbar-nav">
-            <li className="active"><a href="#">Home</a></li>
-            <li><a href="#about">Submit a Game Review</a></li>
+            <li className="active"><Link to="/">Home</Link></li>
+            <li><Link to="/submit">Submit a Review</Link></li>
+            
+           
+              
           </ul>
-        </div>
+          
       </div>
     </nav>
+        {this.props.children}
         </div>
      
     );
