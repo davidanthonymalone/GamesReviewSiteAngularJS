@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import Category from './Category';
-import TagList from './TagList';
+
 
 class Submit extends Component {
     constructor(props){
         super(props);
         
         this.state = {
+            reviews: [],
             
             newReview: {
                 name: "Name of Movie",
                 review: "Review",
-                category: "category",
-                tags: []
+                
             }
         };
         this.submitReview = this.submitReview.bind(this);
@@ -20,6 +19,16 @@ class Submit extends Component {
     submitReview(){
         console.log('Submit Review');
         console.log(this.name.value, this.review.value);
+        let newReview = this.state.newReview;
+        
+        newReview.name = this.name.value;
+        newReview.review = this.review.value;
+        
+        this.setState({newReview});
+        let reviews = this.state.reviews;
+        reviews.push(newReview);
+        this.setState({reviews});
+        console.log(reviews);
     }
     
     addCategory(genre, tags){
@@ -56,9 +65,8 @@ class Submit extends Component {
     placeholder="Leave your review for the game here!" />
             
   </div>
-    <TagList review={this.state.newReview}/>
-            
-<Category addCategory={(tags, genre) => {this.addCategory(tags, genre)}}/>
+   
+        
   <button type="button" onClick={this.submitReview} className="btn btn-default">Submit</button>
 </form>
             </div>
