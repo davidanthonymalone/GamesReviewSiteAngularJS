@@ -15,7 +15,10 @@ class Home extends Component {
     
     	displayReviews() {
 		let resultsArray = [];
+            
+            
 
+          
 		this.state.reviews.map((review, i) => {
 			resultsArray.push(
 				<div className="col-sm-6 col-md-4">

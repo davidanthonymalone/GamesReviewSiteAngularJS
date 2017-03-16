@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {browserHistory} from 'react-router';
 
 
 class Submit extends Component {
@@ -6,7 +7,7 @@ class Submit extends Component {
         super(props);
         
         this.state = {
-            reviews: [],
+            reviews: JSON.parse(localStorage.getItem('reviews')) || [],
             
             newReview: {
                 name: "Name of Movie",
@@ -29,7 +30,8 @@ class Submit extends Component {
         reviews.push(newReview);
         this.setState({reviews});
         localStorage.setItem('reviews', JSON.stringify(reviews));
-        console.log(reviews);
+        console.log(reviews)
+        browserHistory.push('');
     }
     
     addCategory(genre, tags){
