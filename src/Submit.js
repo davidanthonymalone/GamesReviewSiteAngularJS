@@ -15,7 +15,7 @@ class Submit extends Component {
             }
         };
         this.submitReview = this.submitReview.bind(this);
-    }
+    };
     submitReview(){
         console.log('Submit Review');
         console.log(this.name.value, this.review.value);
@@ -28,6 +28,7 @@ class Submit extends Component {
         let reviews = this.state.reviews;
         reviews.push(newReview);
         this.setState({reviews});
+        localStorage.setItem('reviews', JSON.stringify(reviews));
         console.log(reviews);
     }
     
