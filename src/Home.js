@@ -6,7 +6,7 @@ function searchingFor(term){
         return x.name.toLowerCase().includes(term.toLowerCase()) || !term;
     }
 }
-const reviews = {};
+
 class Home extends Component {
     
     constructor(props){
@@ -27,7 +27,14 @@ class Home extends Component {
         this.setState({term: event.target.value})
         
     }
-    
+      delete(review){
+    const newState = this.state.reviews;
+    if (newState.indexOf(review) > -1) {
+      newState.splice(newState.indexOf(review), 1);
+      this.setState({reviews: this.state.reviews});
+      reviews: JSON.parse(localStorage.setItem("reviews", JSON.stringify(this.state.reviews)));
+    }
+     }
     
     	displayReviews() {
 		let resultsArray = [];
@@ -45,7 +52,7 @@ class Home extends Component {
                              <div class="caption">
                        
                         <p>...</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Update</a> <a href="#" class="btn btn-default" role="button">Delete</a></p>
+                        <p> <button type="button" onClick={this.delete.bind(this, review)} className="btn btn-danger btn-xs">Delete</button></p>
                       </div>
 			        <h3>{review.name}</h3>
 			        <p>{review.review}</p>
@@ -64,7 +71,7 @@ class Home extends Component {
            
             <h1>  <br/> Home</h1>
             <form>
-                <input type="text"
+                <input type="text" placeholder="Search"
                     onChange={this.searchHandler}/>
                 </form>
            {this.displayReviews()}
