@@ -33,7 +33,7 @@ My UI design is rather straight forward there is a Submit, View all Reviews and 
 ![][capture2]
 ![][capture3]
 
-![alt text](screenshots/Capture.png "Description goes here")
+![alt text](Capture.png "Description goes here")
 
 ## Routing.
 . . . . List each route supported and state the associated view . . . . . 
