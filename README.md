@@ -29,11 +29,13 @@ A diagram showing the app's hierarchical component design (see example below).
 
 My UI design is rather straight forward there is a Submit, View all Reviews and an About page.  Below is a screenshot of each page.
 
-![][capture1]
-![][capture2]
-![][capture3]
 
-![alt text](Capture.png "Description goes here")
+<p align="center">
+  <img src="screenshots/Capture.PNG" width="350"/>
+  <img src="screenshots/Capture2.PNG" width="350"/>
+  <img src="screenshots/Capture3.PNG" width="350"/>
+ 
+</p>
 
 ## Routing.
 . . . . List each route supported and state the associated view . . . . . 
@@ -56,9 +58,12 @@ There is also the abiliity for users to add reviews and titles.
 
 I reserached how to use/store images on the site.   I also researched how to use local storage with the web application to store the reviews.  I also added the search function.
 
+<p align="center">
+  <img src="screenshots/Capture.PNG" width="350"/>
+  <img src="screenshots/Capture2.PNG" width="350"/>
+  <img src="screenshots/Capture3.PNG" width="350"/>
+    <img src="screenshots/model.PNG" width="350"/>
 
+ 
+</p>
 
-[image1]: ./model.png
-[image2]: ./capture1.png
-[image3]: ./capture2.png
-[image4]: ./capture.png
