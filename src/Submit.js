@@ -2,10 +2,18 @@ import React, { Component } from 'react';
 import {browserHistory} from 'react-router';
 import Dropzone from 'react-dropzone';
 import request from 'superagent';
+var firebase = require("firebase");
 const CLOUDINARY_UPLOAD_PRESET = 'rwvxi2lv';
 const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/dqajckyao/upload';
 
-
+var config = {
+  apiKey: "AIzaSyBamN2ej7R5Xr_JB2duwgt1W4xjttHz1Yo",
+    authDomain: "reactapp-660e5.firebaseapp.com",
+    databaseURL: "https://reactapp-660e5.firebaseio.com",
+    storageBucket: "reactapp-660e5.appspot.com",
+    messagingSenderId: "256056785699"
+};
+firebase.initializeApp(config)
 class Submit extends Component {
     constructor(props){
         super(props);

@@ -19,8 +19,10 @@ class App extends Component {
         </div>
         <div id="navbar" className="navbar-collapse collapse">
           <ul className="nav navbar-nav">
-            <li className="active"><Link to="/">Home</Link></li>
+            <li className="active">
+            <Link to="/">Home</Link></li>
             <li><Link to="/submit">Submit a Review</Link></li>
+        <li><Link to="/About">About Us</Link></li>
             
            
               
@@ -30,6 +32,7 @@ class App extends Component {
     </nav>
         {this.props.children}
         </div>
+        
      
     );
   }
