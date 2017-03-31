@@ -6,8 +6,14 @@ class About extends Component {
   render() {
     return (
        
-    <h1><br/>AboutPage</h1>        
-       
+		<div id="container">
+    <h1><br/>About This Site</h1> 
+		<p>This site is a site dedicated to reviewing games and this site is made for Software Frameworks and is made with React.JS.  </p>
+		<br/>
+		<p>Made By: David Malone </p>
+		<p>Course: System Software Development</p>
+		<p> Games Review Site</p>
+       </div>
     );
   }
 }
