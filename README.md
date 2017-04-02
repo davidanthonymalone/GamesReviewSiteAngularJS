@@ -1,3 +1,4 @@
+Github: https://github.com/davidanthonymalone/GamesReviewSiteAngularJS
 # Assignment 1 - ReactJS App Game Review Site.
 
 Name: David Malone
@@ -34,6 +35,8 @@ My UI design is rather straight forward there is a Submit, View all Reviews and 
   <img src="screenshots/Capture.PNG" width="350"/>
   <img src="screenshots/Capture2.PNG" width="350"/>
   <img src="screenshots/Capture3.PNG" width="350"/>
+  <img src="screenshots/model.PNG" width="350"/>
+
  
 </p>
 
