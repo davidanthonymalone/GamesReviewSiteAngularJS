@@ -35,7 +35,7 @@ My UI design is rather straight forward there is a Submit, View all Reviews and 
   <img src="screenshots/Capture.PNG" width="350"/>
   <img src="screenshots/Capture2.PNG" width="350"/>
   <img src="screenshots/Capture3.PNG" width="350"/>
-  <img src="screenshots/model.PNG" width="350"/>
+  <img src="screenshots/wut.PNG" width="350"/>
 
  
 </p>
@@ -62,7 +62,7 @@ There is also the abiliity for users to add reviews and titles.
 I reserached how to use/store images on the site.   I also researched how to use local storage with the web application to store the reviews.  I also added the search function.
 
 <p align="center">
-<img src="screenshots/model.PNG" width="350"/>
+<img src="screenshots/wut.PNG" width="350"/>
   <img src="screenshots/Capture.PNG" width="350"/>
   <img src="screenshots/Capture2.PNG" width="350"/>
   <img src="screenshots/Capture3.PNG" width="350"/>
