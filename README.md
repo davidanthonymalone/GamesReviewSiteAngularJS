@@ -21,6 +21,8 @@ when you download the application you will first need to npm install and then np
 My Data model is rather straight forward there is a game name, review and image, the image is just a link directing to a cloudinary account.  
 The data model is quite simple and only has reviews.  Users can submit a post and view all posts:
 Here is an explanation of the basic layout.
+<br/>
+
 <img src="screenshots/wut.PNG" width="350"/>
 
 
