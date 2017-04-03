@@ -28,6 +28,7 @@ Here is an explanation of the basic layout.
 ## App Component Design.
 
 This is just a diagram showing a description of the layout of my applicaiton. 
+<br/>
 <img src="screenshots/statediagram.PNG" width="350"/>
 
 
@@ -38,11 +39,13 @@ My UI design is rather straight forward there is a Submit, View all Reviews and 
 
 <p align="center">
 This is the layout of my view all screen.  Here you can see two games are added with reviews.
+<br/>
   <img src="screenshots/Capture.PNG" width="350"/>
   <br/>
   This is the add screen from my web applicaiton.  You can add the game name and the game reivew.
   
   <img src="screenshots/Capture2.PNG" width="350"/>
+  
   This is the about us page of the site.  This page just has information about what the site is about.
   <img src="screenshots/Capture3.PNG" width="350"/>
   
